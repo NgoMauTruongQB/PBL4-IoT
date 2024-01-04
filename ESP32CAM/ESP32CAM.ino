@@ -30,15 +30,15 @@
 #define E18 12
 
 // Insert your network credentials.
-const char *ssid = "Thanh";
-const char *password = "12345678thanh";
+const char *ssid = "P3.T2.B";
+const char *password = "28112773";
 
 // Variables for Timer/Millis.
 unsigned long previousMillis = 0;
 const int Interval = 20000;
 
 // Server Address or Server IP.
-String serverName = "172.20.10.4";
+String serverName = "192.168.1.8";
 String serverPath = "/img";
 const int serverPort = 8080;
 

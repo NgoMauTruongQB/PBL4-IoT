@@ -46,10 +46,12 @@ void check_1()
         if (value == 0)
         {
             Serial.println("Yes");
+            Servo_1.write(90);
+            delay(1000);
             Servo_1.write(0);
-            delay(5000);
+            delay(1000);
             Servo_1.write(180);
-            delay(100);
+            delay(1000);
             break; // Break out of the loop after moving the servo back to position 0
         }
         else
@@ -69,10 +71,12 @@ void check_2()
         if (value == 0)
         {
             Serial.println("Yes");
+            Servo_2.write(90);
+            delay(1000);
             Servo_2.write(180);
-            delay(2000);
+            delay(1000);
             Servo_2.write(0);
-            delay(100);
+            delay(1000);
             break;
         }
         else
@@ -92,10 +96,12 @@ void check_3()
         if (value == 0)
         {
             Serial.println("Yes");
+            Servo_3.write(90);
+            delay(1000);
             Servo_3.write(0);
-            delay(2000);
+            delay(1000);
             Servo_3.write(180);
-            delay(100);
+            delay(1000);
             break;
         }
         else
@@ -115,7 +121,6 @@ void loop()
         {
             command = Serial.readString();
         }
-        Serial.println("P:" + command);
 
         if (command == "ledon")
         {
